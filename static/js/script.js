@@ -1,4 +1,5 @@
 // First, checks if it isn't implemented yet.
+/*使网页变得不可以编辑
 if (!String.prototype.format) {
   String.prototype.format = function() {
     var args = arguments;
@@ -85,6 +86,10 @@ jQuery(document).ready(function($) {
     $("progress").click(function(event) {
         $(this).attr("value", event.offsetX/$(this).width()/0.8 * $(this).attr("max"));
     });
-     $("*").removeAttr('contenteditable');
+     //$("*").removeAttr('contenteditable');
 
 });
+*/
+$(document).ready(function($){
+    $("*").removeAttr('contenteditable');        
+})
